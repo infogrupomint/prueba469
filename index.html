@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <title>E-Commerce Mercado Pago</title>
+</head>
+<body>
+    <!-- shop content -->
+    <div class="card-products-container">
+        <div class="card-products" id="shopContent"></div>
+    </div>
+
+    <!--cart btn-->
+    <div class = "cart-btn" id = "cart-btn">🛒</div>
+    <!--cart counter-->
+    <span class = "cart-counter" id = "cart-counter">0</span>
+
+    <!--modal-->
+    <div class = "modal-overlay" id = "modal-overlay"></div>
+    <div class = "modal-container" id = "modal-container"></div>
+    <div id="wallet_container"></div>
+    
+    <div class="smart-button-container-overlay" id="smart-button-container-overlay">
+    <div class="smart-button-container" id="smart-button-container">
+        <div style="text-align: center;">
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    
+
+
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script src="js/paypal.js"></script>
+
+    <script src="js/products.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
+    
+
+
+</body>
+</html>
