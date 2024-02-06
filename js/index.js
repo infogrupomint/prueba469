@@ -10,16 +10,17 @@ const cart =[];
 //Creamos etiquetas html y llamamos a los datos desde el archivo script productos
 productos.forEach((product)=>{
     const content = document.createElement("div");
+    content.className = "contenedorProductos";
     content.innerHTML = `
     <img src = "${product.img}">
     <h3>${product.productName}</h3>
-    <p>${product.price} $</p>
+    <p>€${product.price} </p>
     `;
     shopContent.append(content);
 
     //creamos un boton
     const buyButton = document.createElement("button");
-    buyButton.innerText = "Buy";
+    buyButton.innerText = "Agregar al Carrito";
 
     //Agregamos el boton a contetn
     content.append(buyButton);
