@@ -10,6 +10,17 @@
     flex-wrap: wrap;
 }
 
+.contenedorProductos {
+    margin: 3px;
+    height: 470px;
+    width: 300px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    background-color: red;
+}
+
+
 .card-products img {
     margin-top: 40px;
     width: 250px;
